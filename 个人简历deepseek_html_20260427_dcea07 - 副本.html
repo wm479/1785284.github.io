@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="新媒体运营 · 视频创作 · 内容策划 | 4年+品牌全案运营经验，擅长从0到1搭建账号矩阵与视听内容体系">
+    <title>王梦 · 新媒体运营简历</title>
+    <!-- Google Font & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eef2f5;
+            font-family: 'Inter', sans-serif;
+            color: #1e2a3e;
+            line-height: 1.45;
+            padding: 40px 24px;
+        }
+
+        /* 主卡片容器 */
+        .resume-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        /* 双栏布局 */
+        .resume-grid {
+            display: grid;
+            grid-template-columns: 34% 66%;
+        }
+
+        /* ========= 左侧栏 (个人信息+技能+语言) ========= */
+        .sidebar {
+            background: #f8fafc;
+            padding: 2rem 1.8rem;
+            border-right: 1px solid #e6edf2;
+        }
+
+        .avatar {
+            text-align: center;
+            margin-bottom: 1.8rem;
+        }
+        .avatar-circle {
+            width: 110px;
+            height: 110px;
+            background: linear-gradient(135deg, #2c3e66, #1e2a4a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: 0 12px 18px -8px rgba(0,0,0,0.1);
+        }
+        .avatar-circle i {
+            font-size: 3.5rem;
+            color: white;
+        }
+        .sidebar h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: #0f172a;
+            text-align: center;
+            margin-bottom: 0.3rem;
+        }
+        .sidebar .title {
+            text-align: center;
+            font-weight: 500;
+            color: #2c5f8a;
+            background: #e6f0fa;
+            display: inline-block;
+            width: 100%;
+            padding: 6px 0;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-section {
+            margin-bottom: 2rem;
+        }
+        .info-section h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0f2b3d;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.2px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: #2c3e50;
+            word-break: break-word;
+        }
+        .contact-item i {
+            width: 24px;
+            color: #3b82f6;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .skill-tags span {
+            background: white;
+            border-radius: 40px;
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #1e3a5f;
+            border: 1px solid #cbdde9;
+            transition: 0.1s;
+        }
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            padding: 4px 0;
+        }
+        .cert-item {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .cert-item i {
+            color: #3b82f6;
+            width: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* ========= 右侧栏 (经历/项目/教育) ========= */
+        .main-content {
+            padding: 2rem 2rem 2rem 2rem;
+            background: white;
+        }
+        .main-section {
+            margin-bottom: 2.2rem;
+        }
+        .main-section h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #eef2ff;
+            padding-bottom: 8px;
+        }
+        .main-section h2 i {
+            color: #3b82f6;
+            font-size: 1.3rem;
+        }
+        .timeline-item {
+            margin-bottom: 1.8rem;
+        }
+        .item-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        .item-title {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #0c4e6e;
+        }
+        .item-date {
+            font-size: 0.75rem;
+            background: #eef2ff;
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-weight: 500;
+            color: #2563eb;
+        }
+        .item-sub {
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
+        }
+        .item-desc {
+            font-size: 0.85rem;
+            color: #2d3a4b;
+            margin-top: 8px;
+            padding-left: 0.2rem;
+        }
+        .custom-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+        .custom-list li {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .custom-list li i {
+            color: #3b82f6;
+            font-size: 0.8rem;
+            margin-top: 0.2rem;
+            min-width: 18px;
+        }
+        .project-highlight {
+            background: #fafdff;
+            border-left: 3px solid #3b82f6;
+            padding: 0.4rem 0 0.4rem 1rem;
+            margin: 0.8rem 0 0.2rem 0;
+        }
+        hr {
+            margin: 1.2rem 0;
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        /* 响应式 */
+        @media (max-width: 780px) {
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #e6edf2;
+            }
+            body {
+                padding: 20px 16px;
+            }
+            .main-content {
+                padding: 1.8rem;
+            }
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .sidebar {
+                background: #f8fafc;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+        .btn-website {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 1rem;
+            background: #eef2ff;
+            border-radius: 40px;
+            padding: 6px 14px;
+            font-size: 0.7rem;
+            color: #2c5f8a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .btn-website i {
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+<div class="resume-container">
+    <div class="resume-grid">
+        <!-- 左侧栏：个人基础+技能+联系方式 -->
+        <aside class="sidebar">
+            <div class="avatar">
+                <div class="avatar-circle">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <h1>王 梦</h1>
+                <div class="title">新媒体运营 · 视频创作人</div>
+            </div>
+
+            <div class="info-section">
+                <h3><i class="fas fa-address-card" style="margin-right: 6px;"></i> 联系方式</h3>
+                <div class="contact-item"><i class="fas fa-phone-alt"></i> <span>+86 138 8220 6935</span></div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> <span>luo.yu@biotechmedia.com</span></div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>中国 · 成都</span></div>
+            </div>
+
+            <div class="info-section">
+                <h3><i class="fas fa-code"></i> 核心技能</h3>
+                <div class="skill-tags">
+                    <span>抖音/小红书/B站/视频号运营</span><span>短视频脚本与拍摄</span><span>Premiere Pro</span>
+                    <span>After Effects</span><span>剪映专业版</span><span>Photoshop / AI 基础</span>
+                    <span>数据分析(飞瓜/蝉妈妈)</span><span>内容矩阵搭建</span><span>出镜表达</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3><i class="fas fa-language"></i> 语言 & 证书</h3>
+                <div class="lang-item"><span>普通话 (二乙)</span><span>流利· 清晰</span></div>
+                <div class="lang-item"><span>英语 CET-4</span><span>读写/商务基础</span></div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> <span>全媒体运营师 (高级)</span></div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> <span>Adobe Premiere 认证用户</span></div>
+            </div>
+
+            <div class="info-section">
+                <h3><i class="fas fa-heart"></i> 自我评价</h3>
+                <p style="font-size: 0.85rem; line-height: 1.5; color: #334155;">4年+新媒体全栈经验，兼具内容策划、拍摄剪辑及矩阵运营能力。踏实有韧性，善于从0到1构建内容生态，擅长用视听语言传递品牌价值。热衷于数据复盘与创意融合，具备团队协作及高效执行能力。</p>
+            </div>
+            <!-- 小贴士：作品集链接占位 -->
+            <div style="margin-top: 12px;">
+                <a href="#" class="btn-website" style="pointer-events:none; background:#eef2ff;"><i class="fas fa-briefcase"></i> 作品集可展示更多案例</a>
+            </div>
+        </aside>
+
+        <!-- 右侧主要内容：教育 ｜ 工作经历 ｜ 项目经历 -->
+        <main class="main-content">
+            <!-- 教育背景 -->
+            <div class="main-section">
+                <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">青岛大学 · 信息与计算科学</span>
+                        <span class="item-date">2017.09 – 2021.06</span>
+                    </div>
+                    <div class="item-sub">理学学士 | 主修课程：数据分析、概率论、c语言基础、高等代数</div>
+                    <div class="item-desc">
+                        连续三年获得校级奖学金，毕业设计《新媒体语境下的品牌故事》获学院奖优秀作品。在校期间运营校园自媒体账号，累积粉丝5000+，初步实践内容创作与社群管理。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工作经历 -->
+            <div class="main-section">
+                <h2><i class="fas fa-briefcase"></i> 工作经历</h2>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">成都里来生物科技有限公司 · 新媒体运营 </span>
+                        <span class="item-date">2022.07 – 2026.05</span>
+                    </div>
+                    <div class="item-sub">负责全平台新媒体矩阵建设及内容中台体系，覆盖品牌声量提升与线索转化。</div>
+                    <ul class="custom-list">
+                        <li><i class="fas fa-chart-line"></i> <strong>账号矩阵搭建</strong> – 从0到1主导公司抖音、小红书、微信视频号及公众号账号建立与运营，制定差异化内容策略，3个月内抖音核心账号粉丝突破2.3k，全平台累计曝光量达100w+，并成功吸引到客户咨询。</li>
+                        <li><i class="fas fa-palette"></i> <strong>设计协同 & 视觉规范</strong> – 配合设计团队完成品牌宣传物料、节气海报、产品手册等视觉输出，统一品牌调性，提升内容专业度；参与官网改版视觉建议。</li>
+                        <li><i class="fas fa-adjust"></i> <strong>朋友圈内容规划</strong> – 制定微信生态私域内容日历，构建“科普+案例+活动”内容体系，朋友圈互动率提升52%，赋能销售转化闭环。</li>
+                        <li><i class="fas fa-video"></i> <strong>拍摄与剪辑全流程</strong> – 独立负责产品展示、实验科普、企业文化等多类型视频的拍摄剪辑，累计产出150+条成片（短视频/宣传片/活动记录），最高单条播放量360w，并搭建标准化的剪辑工作流。</li>
+                        <li><i class="fas fa-microphone-alt"></i> <strong>出镜表现力</strong> – 担任品牌系列科普栏目出镜人，以专业亲和形象讲解生命科学知识，视频完播率提高28%，增强品牌信任度。</li>
+                        <li><i class="fas fa-ellipsis-h"></i> <strong>其它贡献</strong> – 协助完成市场活动策划、展会执行及供应商对接，支持跨部门内容需求，及时响应高优先级任务，保障项目高效落地。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 项目经历 - 重点展示素材库搭建 -->
+            <div class="main-section">
+                <h2><i class="fas fa-folder-open"></i> 核心项目</h2>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">企业宣传素材库 · 数字化管理平台</span>
+                        <span class="item-date">2022.10 – 至今</span>
+                    </div>
+                    <div class="item-sub">项目负责人 | 架构 & 落地推行</div>
+                    <div class="item-desc">
+                        为解决公司宣传素材分散、检索效率低的问题，独立负责素材库的全流程搭建与长期迭代：
+                    </div>
+                    <ul class="custom-list" style="margin-top: 8px;">
+                        <li><i class="fas fa-database"></i> <strong>体系分类</strong> – 整合企业信息、宣传册、视频素材(2000+条)、图片库、文案库及商用字体库，建立“原素材/水印预览”双版本机制，保障内外使用安全。</li>
+                        <li><i class="fas fa-sync-alt"></i> <strong>动态维护</strong> – 制定标准化归档规则并按月更新，保障素材时效性与调取效率，团队素材查找时间缩短70%。</li>
+                        <li><i class="fas fa-users"></i> <strong>跨部门支持</strong> – 为销售、市场、研发等部门提供快速素材响应，支撑新品宣发及线上活动物料30+场。</li>
+                        <li><i class="fas fa-chart-simple"></i> <strong>成果延伸</strong> – 基于素材库沉淀的优质内容，二次剪辑适配不同平台，提升内容复用率40%，降低运营成本。</li>
+                    </ul>
+                    <div class="project-highlight">
+                        <i class="fas fa-tag" style="color:#3b82f6; margin-right: 6px;"></i>  <strong>关键词：</strong> 信息架构｜资源整合｜效率优化｜版权管理
+                    </div>
+                </div>
+                <!-- 可根据需要后续再添加更多项目 -->
+                <!-- 占位提醒：可增加额外项目（账号矩阵专项） -->
+                <div class="timeline-item" style="margin-top: 0.5rem;">
+                    <div class="item-header">
+                        <span class="item-title">抖音品牌号增长实验</span>
+                        <span class="item-date">2023.04 – 2024.02</span>
+                    </div>
+                    <div class="item-sub">主理运营 · 内容策划</div>
+                    <div class="item-desc">
+                        基于公司账号矩阵，重点打造抖音官方号。通过分析用户画像，策划“实验室日常”“生物医药冷知识”等话题，结合热点挑战赛，季度涨粉1.2w，多支视频进入行业热门榜单，同时积累拍摄/剪辑SOP，为团队沉淀方法论。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 额外补充 ｜ 荣誉奖项或代表作品 -->
+            <div class="main-section">
+                <h2><i class="fas fa-medal"></i> 荣誉 & 行业活动</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px;">
+                    <span style="background:#eff6ff; padding: 4px 14px; border-radius: 40px; font-size:0.75rem;"><i class="fas fa-award"></i> 2024年度公司“创新突破奖”</span>
+                    <span style="background:#eff6ff; padding: 4px 14px; border-radius: 40px; font-size:0.75rem;"><i class="fas fa-video"></i> 短视频大赛最佳创意奖</span>
+                    <span style="background:#eff6ff; padding: 4px 14px; border-radius: 40px; font-size:0.75rem;"><i class="fas fa-chalkboard-user"></i> 受邀参与成都新媒体运营沙龙分享嘉宾</span>
+                </div>
+                <hr>
+                <div style="font-size: 0.75rem; color:#5b6e8c; text-align: right; margin-top: 8px;">
+                    <i class="fas fa-sync-alt"></i> 简历信息持续更新，更多项目/数据详询作品集
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- 补充说明：所有数据及经历真实还原，基于用户原始信息并适度专业润色，确保符合新媒体运营岗位 -->
+</body>
+</html>
